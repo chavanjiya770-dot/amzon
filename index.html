@@ -1,0 +1,30 @@
+DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunrise Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <h1>Sunrise Shop</h1>
+    <button id="cartToggle" aria-expanded="false">Cart (<span id="cartCount">0</span>)</button>
+  </header>
+
+  <main>
+    <p class="intro">Fresh groceries and daily needs. Add items to your cart and check the total.</p>
+    <section id="products" class="grid" aria-label="Products"></section>
+  </main>
+
+  <aside id="cart" class="cart" hidden>
+    <h2>Your cart</h2>
+    <ul id="cartItems"></ul>
+    <p class="total">Total: <strong id="cartTotal">₹0</strong></p>
+    <button id="checkout">Place order</button>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
